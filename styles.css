@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    height: 120vh;
+    width: 100vw;
+    background-image: url(./mainpic.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.navbar{
+    width: 100vw;
+    height: 13vh;
+    background: rgba(0,0,0,0.4);
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    position: fixed;
+
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.txt{
+    font-size: 1.5rem;
+    color: white; 
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'McLaren', cursive;  
+
+}
+
+.hov:hover{
+    color: orangered;
+
+
+}
+.clg{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 45vw;
+   
+    align-items: center;
+    gap: 20px;
+}
+.info{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 55vw;
+    align-items: center;
+    gap: 25px;
+}
+a{
+    color: white;
+    font-size: 1.25rem;
+text-decoration: none;
+}
+.mainpic{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    height: 100vh;
+    width: 100vw;
+   display: flex;
+   align-items: center;
+   text-align: center;
+    color: white;
+    font-size: 2.3rem;
+
+}
+.hamburger{
+    display: none;
+}
+#wrapper{
+ height: 300px;
+ width: 100vw;
+ display: flex;
+ overflow-x: auto;
+ background-color:rgba(0,0,0,0.8);
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+#wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.pic{
+   min-width:100vw;
+   height:280px;
+   scroll-snap-align: start;
+   text-align: center;
+   color: white;
+   display: flex;
+   align-items:center ;
+ padding: 20px;
+}
+.para{
+    font-size: 1.8rem;
+}
+#objective{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0,0,0,0.9);
+}
+
+.ologo{
+    height: 70px;
+    width: 70px;
+}
+.obj{
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'McLaren', cursive;  
+
+}
+#activities{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.7);
+    gap: 20px;
+  
+
+}
+
+.apic{
+    height: 200px;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    
+}
+
+.about{
+    height: 50vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.einfo{
+    width: 100vw;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+    padding: 10px;
+}
+.play{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'McLaren', cursive; 
+}
+.soccer{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'McLaren', cursive; 
+}
+
+#contact{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    background: rgba(0,0,0,0.9);
+}
+.cinfo{
+   width: 40vw;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'McLaren', cursive;    
+
+}
+
+
+ul{
+    list-style-type: none;
+    color: white;
+    font-size: .75rem;
+}
+li{
+    padding: 5px;
+}
+h3{
+    color: white;
+}
+.short{
+    color: white;
+    text-decoration: none;
+    font-size: .75rem;
+}
+.short:hover{
+    color: orangered;
+}
+.container{
+    display: flex;
+    gap: 5px;
+}
+.contain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+@media(max-width:940px){
+    .about{
+        height: 60vh;
+    }
+}
+
+
+
+
+@media (max-width:850px) {
+    .txt{
+        font-size: 1.5rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    .info{
+        width: 60vw;
+        gap: 15px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    #activities{
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap; 
+        
+        justify-content: space-evenly; 
+    }
+    .para{
+        font-size: 1.5rem;
+    }
+    .description{
+        font-size: .8rem;
+    }
+    .about{
+        height: 70vh;
+    }
+    .navbar{
+        height: 14vh;
+    }
+  
+
+    
+    
+    
+}
+
+@media (max-width:600px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .box{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ham{
+        height: 40px;
+        width: 40px;
+    }
+    .para{
+        font-size: 1.3rem;
+    }
+    .description{
+        font-size: 0.7rem;
+    }
+    .about{
+        height: 90vh;
+    }
+    .ig{
+        height: 35px;
+        width: 35px;
+    }
+
+}
+@media(max-width:480px){
+    .navbar{
+        width: 100vw;
+        height: 9vh;
+        
+    }
+    .heading{
+        font-size: 1.25rem;
+    }
+    .clg{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .about{
+        height: 70vh;
+    }
+    .txt{
+font-size: 1rem;
+    }
+    .ologo{
+        height: 60px;
+        width: 60px;
+    }
+    .description{
+        font-size: 0.6rem;
+    }
+
+  
+    .logo{
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+    .ham{
+        height: 30px;
+        width: 30px;
+    }
+    .pic{
+        padding: 30px;
+    }
+    .para{
+font-size: 1rem;
+    }
+    #activities{
+        height: 110vh;
+    }
+   #objective{
+    height: 30vh;
+   }
+  
+
+}
+@media(max-width:420px){
+    .apic{
+        height: 200px;
+        width: 300px;
+    }
+    #about{
+        height: 200vh;
+    }
+    
+  
+   
+}
+@media(max-width:360px){
+    .txt{
+        font-size: .75rem;
+    }
+    .ham{
+        height: 25px;
+        width: 25px;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+  
+    h3{
+        font-size: 1rem;
+    }
+}
